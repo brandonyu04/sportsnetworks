@@ -1,6 +1,4 @@
-import csv
 import numpy as np
-import os
 
 team_list=['Arsenal', 'B\'mouth', 'Burnley', 'C. Palace', 'Chelsea', 'Everton', \
           'Hull City', 'Leicester', 'Liverpool', 'M\'brough', 'Man City', 'Man Utd', \
@@ -9,6 +7,7 @@ team_alias=['Arsenal', 'B-mouth', 'Burnley', 'Cpalace', 'Chelsea', 'Everton', \
           'Hull-City', 'Leicester', 'Liverpool', 'M-brough', 'Man-City', 'Man-Utd', \
           'S-Hampton', 'Spurs', 'Stoke', 'Sunderland', 'Swansea', 'Watford', 'Wba', 'West-Ham']
 def import_data(folder_path, team_list):
+	#the output is a list of tuples containing match stats
     file_list = os.listdir(folder_path)
     match_list = []
     return_list = []
