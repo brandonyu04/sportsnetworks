@@ -37,6 +37,7 @@ def import_data(folder_path, team_list):
                 match_list.append(match_tuple)
     return match_list
 def comp_passing_strength(match_list, T=45):
+	#commpute stats and add as items in the tuples
     player_list = []
     for i in range(len(match_list)):
         match = match_list[i]
